@@ -50,7 +50,7 @@ public class DjzAbstractXmlElementGenerator extends AbstractXmlElementGenerator 
 		// 公用select
 		sb.setLength(0);
 		sb.append("select ");
-		sb.append("<include refid=\"Base_Column_List\" /> ");
+		sb.append(" * ");
 		sb.append("from ");
 		sb.append(introspectedTable.getFullyQualifiedTableNameAtRuntime());
 		sb.append(" ");
