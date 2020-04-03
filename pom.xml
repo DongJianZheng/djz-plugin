@@ -42,6 +42,20 @@
 			<version>3.5</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+		<!-- 如果你只需要用到通用 Mapper 中的插件，可以只引入 mapper-generator -->
+		<!-- 注意，这个包不需要和上面的 mapper 同时引入，mapper 中包含 generator -->
+		<!-- https://mvnrepository.com/artifact/tk.mybatis/mapper-generator -->
+		<dependency>
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper-generator</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
